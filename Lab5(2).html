@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sagar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">&lt;SS /&gt;</div>
+            <nav class="navigation">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+                <div class="divider"></div>
+                <button class="theme-toggle"><i class="fa-regular fa-sun"></i></button>
+                <button class="btn-primary">Download CV</button>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+<div class="mobile-menu-overlay" id="mobile-overlay"></div>
+    <aside class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">&lt;SS /&gt;</div>
+            <button class="close-menu-btn" id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="theme-switch-wrapper">
+                <span>Switch Theme</span>
+                <button class="theme-toggle"><i class="fa-regular fa-sun"></i></button>
+            </div>
+            <button class="btn-primary w-100">Download CV</button>
+        </div>
+    </aside>
+
+    <section class="hero container">
+        <div class="hero-text" data-aos="fade-right">
+            <h1>Hi, I'm Maria <span class="wave">👋</span></h1>
+            <p>I’m a beginner developer focused on creating simple and user-friendly web projects using HTML, CSS, and JavaScript. I also have basic experience with C# and sometimes work on designing interfaces using Figma and Photoshop. I aim to build websites that are clean, responsive, and visually appealing.
+                Even though I’m still at the beginning of my journey, I truly enjoy learning programming and exploring new technologies.</p>
+            
+            <div class="location-status">
+                <div class="item">
+                    <i class="fa-solid fa-location-dot"></i> Uzhhorod, Ukraine
+                </div>
+                <div class="item">
+                    <span class="status-dot"></span> Available for new projects
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-figma"></i></a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <div class="image-wrapper">
+                <img src="photo_2026-04-30_15-30-59.jpg" alt="Img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about bg-light">
+        <div class="container">
+            <div class="section-badge">About me</div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper-left">
+                        <img src="photo_2026-04-30_15-32-33.jpg" alt="Img2">
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h2>Curious about me? Here you have it:</h2>
+                    <p>I’m a beginner developer who enjoys building simple and clean web projects using HTML, CSS, and JavaScript. I’m also familiar with Git for version control and have basic experience with C#. I like combining both technical and creative skills to bring ideas to life, using tools like Figma and Photoshop for design.</p>
+                    <p>I started learning programming not long ago, but I’m already exploring different areas of development and improving my skills step by step. I focus on writing clear, understandable code and creating user-friendly interfaces.</p>
+                    <p>I enjoy learning new technologies, experimenting with small projects, and gradually becoming more confident as a developer. For me, programming is not just about code, but also about solving problems and building something useful.</p>
+                    <p>When I’m not coding, I often spend time learning design, watching tutorials, or looking for inspiration for new projects.</p>
+                    <p>Finally, a few quick facts about me:</p>
+                    
+                    <ul class="quick-bits">
+                        <li>Beginner in web development</li>
+                        <li>Basic knowledge of C#</li>
+                        <li>Familiar with Git and version control</li>
+                        <li>Motivated to learn and grow</li>
+                    </ul>
+                    
+                    <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills container">
+        <div class="section-badge">Skills</div>
+        <p class="skills-subtitle">The skills, tools and technologies I am really good at:</p>
+        
+        <div class="skills-grid">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><i class="devicon-javascript-plain colored"></i><span>Javascript</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="500"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="600"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="700"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        </div>
+    </section>
+
+    <section id="work" class="work container">
+        <div class="section-badge">Work</div>
+        <p class="section-subtitle">Some of the noteworthy projects I have built:</p>
+
+        <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+                <div class="image-bg-wrapper">
+                    <img src="Scr3.png" alt="Project Fiskil">
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Fiskil</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                <div class="tech-tags">
+                    <span>HTML</span> <span>Css</span> <span>Javascript</span> <span>Figma</span> <span>Git</span>
+                </div>
+                <div class="project-links">
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reverse" data-aos="fade-up">
+            <div class="project-image">
+                <div class="image-bg-wrapper">
+                    <img src="Scr2.png" alt="Project Fiskil">
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Fiskil</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                <div class="tech-tags">
+                    <span>HTML</span> <span>Css</span> <span>Javascript</span> <span>Figma</span> <span>Git</span>
+                </div>
+                <div class="project-links">
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+                <div class="image-bg-wrapper">
+                    <img src="Scr1.png" alt="Project Fiskil">
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Fiskil</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                <div class="tech-tags">
+                    <span>HTML</span> <span>Css</span> <span>Javascript</span> <span>Figma</span> <span>Git</span>
+                </div>
+                <div class="project-links">
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials bg-light">
+        <div class="container">
+            <div class="section-badge">Testimonials</div>
+            <p class="section-subtitle">Nice things people have said about me:</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+                    <p>"Job well done! I am really impressed. She is very very good at what she does :) I would recommend Maria and will rehire in the future for Frontend development."</p>
+                    <div class="user-info">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-role">Founder - xyz.com</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+                    <p>"Great guy, highly recommended for any COMPLEX front-end development job! Her skills are top-notch and he will be an amazing addition to any team."</p>
+                    <div class="user-info">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-role">Founder - abc.com</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+                    <p>"Maria was extremely easy and pleasant to work with and he really cares about the project being a success. Maria has a high level of knowledge and was able to work on my MERN stack application without any issues."</p>
+                    <div class="user-info">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-role">Freelancer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact container" data-aos="zoom-in">
+        <div class="section-badge">Get in touch</div>
+        <p class="contact-text">What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
+        
+        <div class="contact-methods">
+            <div class="method">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>limezo68@gmail.com</h2>
+                <i class="fa-regular fa-copy copy-btn"></i>
+            </div>
+            <div class="method">
+                <i class="fa-solid fa-phone"></i>
+                <h2>+380958865550</h2>
+                <i class="fa-regular fa-copy copy-btn"></i>
+            </div>
+        </div>
+        
+        <div class="contact-socials">
+            <p>You may also find me on these platforms!</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-figma"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 | Designed and coded ❤️ by Mariia Kugaivska</p>
+    </footer>
+
+<script>
+        // Знаходимо всі потрібні елементи
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-overlay');
+        const navLinks = document.querySelectorAll('.mobile-nav a');
+
+        // Функція для відкриття/закриття меню
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Забороняємо скролити сторінку, коли меню відкрите
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Вішаємо події кліку
+        mobileBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu); // Закриття по кліку на сірий фон
+        
+        // Закриваємо меню, якщо користувач клікнув на якесь посилання
+        navLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // --- Перемикач темної теми ---
+        const themeToggles = document.querySelectorAll('.theme-toggle'); // Знаходимо обидві кнопки (на ПК і в моб. меню)
+        const body = document.body;
+    
+        //Перевіряємо, чи є збережена тема в локальному сховищі браузера
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            updateIcons(true);
+        }
+
+        // Функція для оновлення іконок на всіх кнопках
+        function updateIcons(isDark) {
+        themeToggles.forEach(btn => {
+            if (isDark) {
+                btn.innerHTML = '<i class="fa-regular fa-moon"></i>';
+            } else {
+                btn.innerHTML = '<i class="fa-regular fa-sun"></i>';
+            }
+        });
+        }
+
+        // Вішаємо клік на всі кнопки перемикання теми
+        themeToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                body.classList.toggle('dark-theme');
+                const isDarkMode = body.classList.contains('dark-theme');
+                updateIcons(isDarkMode);
+        
+            // Зберігаємо вибір користувача
+            if (isDarkMode) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+       });
+    });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 800, // Тривалість анімації (в мілісекундах)
+            once: true,    // Анімація програється лише один раз при скролі
+            offset: 100    // Відступ у пікселях від нижнього краю екрану до початку анімації
+        });
+    </script>
+
+</body>
+</html>
