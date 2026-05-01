@@ -249,19 +249,16 @@
     </footer>
 
 <script>
-        // Знаходимо всі потрібні елементи
         const mobileBtn = document.querySelector('.mobile-menu-btn');
         const closeBtn = document.getElementById('close-menu');
         const mobileMenu = document.getElementById('mobile-menu');
         const overlay = document.getElementById('mobile-overlay');
         const navLinks = document.querySelectorAll('.mobile-nav a');
 
-        // Функція для відкриття/закриття меню
         function toggleMenu() {
             mobileMenu.classList.toggle('active');
             overlay.classList.toggle('active');
             
-            // Забороняємо скролити сторінку, коли меню відкрите
             if (mobileMenu.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
             } else {
@@ -269,28 +266,23 @@
             }
         }
 
-        // Вішаємо події кліку
         mobileBtn.addEventListener('click', toggleMenu);
         closeBtn.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu); // Закриття по кліку на сірий фон
+        overlay.addEventListener('click', toggleMenu); 
         
-        // Закриваємо меню, якщо користувач клікнув на якесь посилання
         navLinks.forEach(link => {
             link.addEventListener('click', toggleMenu);
         });
 
-        // --- Перемикач темної теми ---
-        const themeToggles = document.querySelectorAll('.theme-toggle'); // Знаходимо обидві кнопки (на ПК і в моб. меню)
+        const themeToggles = document.querySelectorAll('.theme-toggle');
         const body = document.body;
-    
-        //Перевіряємо, чи є збережена тема в локальному сховищі браузера
+
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             body.classList.add('dark-theme');
             updateIcons(true);
         }
 
-        // Функція для оновлення іконок на всіх кнопках
         function updateIcons(isDark) {
         themeToggles.forEach(btn => {
             if (isDark) {
@@ -301,14 +293,12 @@
         });
         }
 
-        // Вішаємо клік на всі кнопки перемикання теми
         themeToggles.forEach(toggle => {
             toggle.addEventListener('click', () => {
                 body.classList.toggle('dark-theme');
                 const isDarkMode = body.classList.contains('dark-theme');
                 updateIcons(isDarkMode);
         
-            // Зберігаємо вибір користувача
             if (isDarkMode) {
                 localStorage.setItem('theme', 'dark');
             } else {
@@ -321,9 +311,9 @@
     
     <script>
         AOS.init({
-            duration: 800, // Тривалість анімації (в мілісекундах)
-            once: true,    // Анімація програється лише один раз при скролі
-            offset: 100    // Відступ у пікселях від нижнього краю екрану до початку анімації
+            duration: 800, 
+            once: true, 
+            offset: 100
         });
     </script>
 
